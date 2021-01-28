@@ -247,6 +247,8 @@ nav {
 }
 
 /* MEDIA QUERY : FILTRES */
+
+/* Mobile*/
 @media screen and (max-width: 609px) {
   .contenu-filtre button {
     padding-right: 15px;
@@ -254,6 +256,17 @@ nav {
     margin-top: 0.8em;
   }
 }
+
+/* Tablette */
+
+@media screen and (min-width: 610px) and (max-width: 768px) {
+  .contenu-filtre button {
+    margin-right: 0.8em;
+    margin-top: 0.8em;
+  }
+}
+
+/* ------- */
 
 /* NOMBRE HEBERGEMENTS DISPONIBLES */
 
@@ -277,4 +290,302 @@ nav {
   text-align: center;
   margin-right: 12px;
   font-size: x-small;
+}
+
+/* HÉBERGEMENTS */
+
+#hebergements {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+#hebergements h3 {
+  font-size: 22px;
+  margin-left: 40px;
+}
+
+.contenant-hebergement {
+  width: 67%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px 0;
+  margin-right: 20px;
+}
+
+.contenu-hebergement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: auto 40px;
+}
+
+.carte-hebergement {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px 0px rgba(212, 212, 212, 0.65);
+  margin: 15px 0px 20px 0px;
+  height: 200px;
+  width: 245px;
+}
+
+.contenu-carte-hebergement {
+  padding: 5px 5px 10px 5px;
+}
+
+.contenu-carte-hebergement img {
+  width: 236px;
+  height: 115px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.texte-contenu-carte-hebergement {
+  padding-left: 12px;
+}
+
+.texte-contenu-carte-hebergement h4 {
+  margin: 0;
+}
+
+.texte-contenu-carte-hebergement p {
+  margin: 6px 0;
+  font-size: 0.9em;
+}
+
+.etoiles {
+  color: #0065fc;
+  font-size: x-small;
+}
+
+.plus {
+  font-weight: 700;
+  font-size: 1.15em;
+  padding-left: 50px;
+  padding-bottom: 20px;
+  margin-top: 17px;
+}
+
+/* POPULAIRE */
+
+#populaire {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px 0;
+}
+
+#populaire h3 {
+  margin-left: 40px;
+}
+
+.contenu-populaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-top: 20px;
+}
+
+.carte-populaire {
+  background-color: white;
+  border-radius: 20px;
+  height: 145px;
+  width: 345px;
+  margin-bottom: 30px;
+  margin-inline: auto;
+}
+
+.contenu-carte-populaire {
+  display: flex;
+  padding: 5px;
+}
+
+.carte-3 img {
+  width: 125px;
+}
+
+.contenu-carte-populaire img {
+  width: 125px;
+  height: 135px;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.texte-contenu-carte-populaire {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-right: 50px;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.texte-contenu-carte-populaire h4 {
+  margin: 0;
+}
+
+.texte-contenu-carte-populaire p {
+  font-size: 0.9em;
+  margin: 6px 0;
+}
+
+/* MEDIA QUERY Mobile : HEBERGEMENTS */
+@media screen and (max-width: 500px) {
+  #hebergements {
+    margin: 0;
+    flex-direction: column-reverse;
+  }
+
+  /* POPULAIRE */
+
+  #populaire {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  #populaire h3 {
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+
+  .fa-chart-line {
+    padding-left: 100px;
+  }
+
+  .contenu-populaire {
+    flex-direction: column;
+  }
+
+  .carte-populaire {
+    width: 100%;
+    margin-bottom: 0.625em;
+  }
+
+  .contenu-carte-populaire {
+    width: 100%;
+    margin-inline: auto;
+  }
+
+  .contenu-carte-populaire img {
+    width: 125px;
+  }
+
+  .texte-contenu-carte-populaire {
+    width: 90%;
+    padding-right: 10px;
+  }
+
+  .texte-contenu-carte-populaire h4 {
+    font-size: 1em;
+  }
+
+  .texte-contenu-carte-populaire p {
+    font-size: 14px;
+  }
+
+  .carte-3 img {
+    width: 38%;
+  }
+
+  /* HÉBERGEMENTS */
+
+  .contenant-hebergement {
+    width: 100%;
+    background-color: transparent;
+    margin: 0;
+    padding-bottom: 0;
+    height: auto;
+  }
+
+  .contenu-hebergement {
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .carte-hebergement {
+    margin: 0.563em 0;
+    height: 200px;
+    width: 335px;
+  }
+
+  .contenu-carte-hebergement img {
+    width: 100%;
+    height: 115px;
+  }
+
+  .plus {
+    padding-left: 20px;
+  }
+}
+
+/* MEDIA QUERY Tablette : HEBERGEMENTS */
+@media screen and (min-width: 610px) and (max-width: 768px) {
+  #hebergements {
+    flex-direction: column;
+  }
+
+  .contenant-hebergement {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #populaire {
+    width: 100%;
+  }
+
+  .contenant-populaire {
+    width: 100%;
+  }
+
+  .contenant-populaire h3 {
+    margin-left: 0;
+  }
+
+  .contenu-populaire {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .carte-populaire {
+    flex-shrink: 1;
+    flex-basis: 100%;
+    width: 500px;
+  }
+
+  .texte-contenu-carte-populaire {
+    margin: 0px;
+    padding-right: 0px;
+  }
+
+  .texte-contenu-carte-populaire h4 {
+    font-size: 18px;
+  }
+
+  .texte-contenu-carte-populaire p {
+    font-size: 18px;
+  }
+
+  .fa-star {
+    font-size: small;
+  }
 }
