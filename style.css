@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  margin: auto;
+  margin: auto 50px;
   max-width: 1440px;
 }
 
@@ -19,6 +19,7 @@ a {
 /* Header */
 
 header {
+  margin: 0;
   display: grid;
   align-items: center;
   grid-template-columns: auto 1fr auto auto;
@@ -27,7 +28,6 @@ header {
 
 header img {
   grid-area: logo;
-  padding: 0 2rem;
   height: 2.8rem;
 }
 
@@ -101,4 +101,14 @@ nav {
   }
 }
 
+/* FIN MEDIA QUERY HEADER */
+
 /* TITRE DE LA PAGE */
+
+.titre-page h1 {
+  font-size: 20px;
+}
+
+.titre-page p {
+  margin-top: 0;
+}
