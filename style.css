@@ -69,6 +69,11 @@ nav {
 /* MEDIA QUERY : Header */
 
 @media screen and (max-width: 609px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   header {
     grid-template-columns: auto 1fr auto;
     grid-template-areas: "logo . inscription" "navbar navbar navbar";
@@ -112,3 +117,85 @@ nav {
 .titre-page p {
   margin-top: 0;
 }
+
+/* BOUTON-RECHERCHE */
+
+.bouton-recherche {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  padding: 17px;
+}
+
+.ville {
+  text-align: left;
+  border-top: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 17px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  text-decoration: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.bouton-rechercher {
+  background-color: #0065fc;
+  color: white;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 17px;
+  font-weight: bold;
+  outline: none;
+  font-size: 1em;
+}
+
+.bouton-rechercher:hover {
+  color: #0065fc;
+  background-color: #deebff;
+  cursor: pointer;
+}
+
+.fa-search {
+  display: none;
+}
+
+/* MEDIA QUERY : BOUTON-RECHERCHER */
+@media screen and (max-width: 609px) {
+  .fa-map-marker-alt {
+    font-size: large;
+  }
+
+  .ville {
+    padding-right: 20px;
+  }
+
+  .bouton-rechercher {
+    margin: 0;
+    border-radius: 18px;
+    position: absolute;
+    margin-left: 270px;
+    padding-bottom: 19px;
+  }
+
+  .bouton-rechercher span {
+    display: none;
+  }
+
+  .bouton-rechercher .fa-search {
+    display: contents;
+    color: white;
+    font-size: large;
+  }
+}
+
+/* FILTRES */
