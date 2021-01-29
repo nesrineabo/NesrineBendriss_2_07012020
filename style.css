@@ -247,9 +247,8 @@ nav {
   border-left: none;
 }
 
-/* MEDIA QUERY : FILTRES */
+/* MEDIA QUERIES : FILTRES */
 
-/* Mobile*/
 @media screen and (max-width: 609px) {
   .contenu-filtre button {
     padding-right: 15px;
@@ -258,8 +257,6 @@ nav {
   }
 }
 
-/* Tablette */
-
 @media screen and (min-width: 610px) and (max-width: 768px) {
   .contenu-filtre button {
     margin-right: 0.8em;
@@ -267,7 +264,14 @@ nav {
   }
 }
 
-/* ------- */
+@media screen and (min-width: 769px) and (max-width: 909px) {
+  .contenu-filtre button {
+    margin-right: 0.8em;
+    margin-top: 0.8em;
+  }
+}
+
+/* FIN MEDIA QUERIES : FILTRES */
 
 /* NOMBRE HEBERGEMENTS DISPONIBLES */
 
@@ -1005,3 +1009,52 @@ nav {
 }
 
 /* FIN MEDIA QUERIES : ACTIVITES */
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.contenu-footer {
+  margin-inline: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.texte-contenu-footer {
+  margin-right: 230px;
+  padding-bottom: 30px;
+}
+
+.texte-contenu-footer h3 {
+  padding: 45px 0 10px 0;
+}
+
+.texte-contenu-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.texte-contenu-footer ul li {
+  font-size: 1.05em;
+  padding: 5px 0;
+}
+
+.texte-contenu-footer ul li a:hover {
+  color: #0065fc;
+}
+
+/* MEDIA QUERIES : FOOTER */
+
+@media screen and (max-width: 1331px) {
+  .texte-contenu-footer {
+    margin-right: 150px;
+    padding-bottom: 10px;
+  }
+
+  .texte-contenu-footer h3 {
+    padding: 15px 0 0px 0;
+  }
+}
