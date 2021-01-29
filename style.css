@@ -3,6 +3,7 @@
 body {
   font-family: "Raleway", sans-serif;
   margin: 0;
+  margin: auto;
   color: black;
 }
 
@@ -379,7 +380,7 @@ nav {
 /* POPULAIRE */
 
 #populaire {
-  width: 30%;
+  width: 31%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -389,7 +390,11 @@ nav {
 }
 
 #populaire h3 {
-  margin-left: 40px;
+  margin-left: 10px;
+}
+
+.fa-chart-line {
+  margin-left: 90px;
 }
 
 .contenu-populaire {
@@ -457,6 +462,8 @@ nav {
     width: 100%;
     margin: 0;
     border-radius: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 
   #populaire h3 {
@@ -482,28 +489,32 @@ nav {
     margin-inline: auto;
   }
 
-  .contenu-carte-populaire img {
+  .contenant-image-populaire {
     width: 125px;
   }
 
+  .contenu-image-populaire img {
+    width: 100%;
+  }
+
   .texte-contenu-carte-populaire {
-    width: 90%;
+    width: 100%;
     padding-right: 10px;
   }
 
   .texte-contenu-carte-populaire h4 {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   .texte-contenu-carte-populaire p {
     font-size: 14px;
   }
 
-  .carte-3 img {
-    width: 38%;
-  }
-
   /* HÉBERGEMENTS */
+
+  #hebergements h3 {
+    margin-left: 0;
+  }
 
   .contenant-hebergement {
     width: 100%;
@@ -522,8 +533,7 @@ nav {
 
   .carte-hebergement {
     margin: 0.563em 0;
-    height: 200px;
-    width: 335px;
+    width: 100%;
   }
 
   .contenu-carte-hebergement img {
@@ -536,6 +546,45 @@ nav {
   }
 }
 
+@media screen and (min-width: 501px) and (max-width: 609px) {
+  #hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .contenant-hebergement {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .carte-hebergement {
+    width: 100%;
+  }
+
+  .contenu-carte-hebergement img {
+    width: 100%;
+  }
+
+  #populaire {
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #populaire h3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .carte-populaire {
+    width: 100%;
+  }
+}
+
 /* MEDIA QUERY Tablette : HEBERGEMENTS */
 @media screen and (min-width: 610px) and (max-width: 768px) {
   #hebergements {
@@ -545,18 +594,20 @@ nav {
   .contenant-hebergement {
     width: 100%;
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .carte-hebergement {
+    width: 100%;
+  }
+
+  .contenu-carte-hebergement img {
+    width: 100%;
   }
 
   #populaire {
     width: 100%;
-  }
-
-  .contenant-populaire {
-    width: 100%;
-  }
-
-  .contenant-populaire h3 {
-    margin-left: 0;
   }
 
   .contenu-populaire {
@@ -567,14 +618,12 @@ nav {
   }
 
   .carte-populaire {
-    flex-shrink: 1;
-    flex-basis: 100%;
-    width: 500px;
+    width: 100%;
   }
 
   .texte-contenu-carte-populaire {
     margin: 0px;
-    padding-right: 0px;
+    padding-right: 10px;
   }
 
   .texte-contenu-carte-populaire h4 {
@@ -587,5 +636,62 @@ nav {
 
   .fa-star {
     font-size: small;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1275px) {
+  #hebergements {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .contenant-hebergement {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .carte-hebergement {
+    width: 30%;
+  }
+
+  .contenu-carte-hebergement img {
+    width: 100%;
+  }
+
+  /* POPULAIRE */
+
+  #populaire {
+    width: 100%;
+  }
+
+  #populaire h3 {
+    margin-left: 40px;
+  }
+
+  .contenu-populaire {
+    margin-inline: 30px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .carte-populaire {
+    width: 47%;
+  }
+
+  .texte-contenu-carte-populaire {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1276px) and (max-width: 1364px) {
+  .carte-hebergement {
+    width: 45%;
+  }
+
+  .contenu-carte-hebergement img {
+    width: 100%;
   }
 }
