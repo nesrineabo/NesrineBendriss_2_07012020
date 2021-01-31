@@ -125,12 +125,16 @@ nav {
   margin-top: 0;
 }
 
+/* MEDIA QUERY : TITRE PAGE */
+
 @media screen and (max-width: 609px) {
   .titre-page {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
+
+/* MEDIA QUERY : TITRE PAGE */
 
 /* BOUTON-RECHERCHE */
 
@@ -184,6 +188,7 @@ nav {
 }
 
 /* MEDIA QUERY : BOUTON-RECHERCHER */
+
 @media screen and (max-width: 609px) {
   .bouton-recherche {
     margin-left: 20px;
@@ -216,6 +221,8 @@ nav {
     font-size: large;
   }
 }
+
+/* FIN MEDIA QUERY : BOUTON-RECHERCHER */
 
 /* FILTRES */
 .filtre {
@@ -320,11 +327,15 @@ nav {
   font-size: x-small;
 }
 
+/* MEDIA QUERY : INFO-DISPO */
+
 @media screen and (max-width: 609px) {
   .info-dispo {
     margin-left: 20px;
   }
 }
+
+/* FIN DE MEDIA QUERY : INFO-DISPO */
 
 /* HÉBERGEMENTS */
 
@@ -482,7 +493,7 @@ nav {
   margin: 6px 0;
 }
 
-/* MEDIA QUERY Mobile : HEBERGEMENTS */
+/* MEDIA QUERIES : HEBERGEMENTS */
 @media screen and (max-width: 500px) {
   #hebergements {
     margin: 0;
@@ -622,7 +633,6 @@ nav {
   }
 }
 
-/* MEDIA QUERY Tablette : HEBERGEMENTS */
 @media screen and (min-width: 610px) and (max-width: 768px) {
   #hebergements {
     flex-direction: column;
