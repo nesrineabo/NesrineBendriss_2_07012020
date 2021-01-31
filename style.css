@@ -70,11 +70,6 @@ nav {
 /* MEDIA QUERY : Header */
 
 @media screen and (max-width: 609px) {
-  /*.container {
-    margin-left: 20px;
-    margin-right: 20px;
-  }*/
-
   .container {
     margin: 0;
   }
@@ -316,15 +311,16 @@ nav {
 }
 
 .fa-info {
-  height: 20px;
-  width: 20px;
+  padding: 0.625em;
   color: #0065fc;
   background-color: none;
   border: 1px solid #f2f2f2;
   border-radius: 50px;
   text-align: center;
   margin-right: 12px;
-  font-size: x-small;
+  font-size: 0.625em;
+  width: 0.625em;
+  line-height: 0.625em;
 }
 
 /* MEDIA QUERY : INFO-DISPO */
@@ -332,6 +328,16 @@ nav {
 @media screen and (max-width: 609px) {
   .info-dispo {
     margin-left: 20px;
+    font-size: 1em;
+    text-align: start;
+  }
+
+  span .fa-info {
+    padding-left: 0px;
+    font-size: small;
+    text-align: center;
+    padding-top: 2px;
+    padding-bottom: 2px;
   }
 }
 
