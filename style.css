@@ -328,16 +328,11 @@ nav {
 @media screen and (max-width: 609px) {
   .info-dispo {
     margin-left: 20px;
-    font-size: 1em;
-    text-align: start;
   }
 
-  span .fa-info {
-    padding-left: 0px;
-    font-size: small;
-    text-align: center;
-    padding-top: 2px;
-    padding-bottom: 2px;
+  .info-dispo p {
+    font-size: 1em;
+    text-align: start;
   }
 }
 
