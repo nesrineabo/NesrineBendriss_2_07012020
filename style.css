@@ -540,9 +540,6 @@ nav {
   margin: 6px 0 32px 0;
 }
 
-<<<<<<< HEAD
-/* MEDIA QUERIES : HEBERGEMENTS */
-=======
 /* MEDIA QUERY Mobile : HEBERGEMENTS */
 @media screen and (min-width: 376px) and (max-width: 499px) {
   #populaire h3 {
@@ -553,7 +550,6 @@ nav {
   }
 }
 
->>>>>>>ajustement @media screen and (max-width: 500px) {
   #hebergements {
     margin: 0;
     flex-direction: column-reverse;
