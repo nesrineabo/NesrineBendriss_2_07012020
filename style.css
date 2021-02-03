@@ -123,8 +123,6 @@ nav {
   margin-top: 0;
 }
 
-/* MEDIA QUERY : TITRE PAGE */
-
 @media screen and (max-width: 609px) {
   .titre-page {
     margin-left: 20px;
@@ -143,8 +141,6 @@ nav {
     margin-bottom: 2.375em;
   }
 }
-
-/* MEDIA QUERY : TITRE PAGE */
 
 /* BOUTON-RECHERCHE */
 
@@ -198,7 +194,6 @@ nav {
 }
 
 /* MEDIA QUERY : BOUTON-RECHERCHER */
-
 @media screen and (max-width: 609px) {
   .bouton-recherche {
     margin-left: 20px;
@@ -239,8 +234,6 @@ nav {
     margin-bottom: 35px;
   }
 }
-
-/* FIN MEDIA QUERY : BOUTON-RECHERCHER */
 
 /* FILTRES */
 .filtre {
@@ -358,8 +351,6 @@ nav {
   line-height: 0.625em;
 }
 
-/* MEDIA QUERY : INFO-DISPO */
-
 @media screen and (max-width: 609px) {
   .info-dispo {
     margin-left: 20px;
@@ -378,8 +369,6 @@ nav {
     text-align: start;
   }
 }
-
-/* FIN DE MEDIA QUERY : INFO-DISPO */
 
 /* HÉBERGEMENTS */
 
@@ -550,6 +539,7 @@ nav {
   }
 }
 
+@media screen and (max-width: 500px) {
   #hebergements {
     margin: 0;
     flex-direction: column-reverse;
@@ -693,6 +683,7 @@ nav {
   }
 }
 
+/* MEDIA QUERY Tablette : HEBERGEMENTS */
 @media screen and (min-width: 610px) and (max-width: 768px) {
   #hebergements {
     flex-direction: column;
