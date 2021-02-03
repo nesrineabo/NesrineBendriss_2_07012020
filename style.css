@@ -824,7 +824,7 @@ nav {
   }
 
   .lien-activites img {
-    height: 192px;
+    height: 136px;
   }
 }
 
@@ -1024,7 +1024,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 1275px) and (max-width: 1364px) {
+@media screen and (min-width: 1276px) and (max-width: 1364px) {
   .contenu-activites {
     display: flex;
     flex-wrap: wrap;
