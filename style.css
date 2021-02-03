@@ -1095,10 +1095,20 @@ footer {
 
   .texte-contenu-footer {
     margin-right: 0;
+    padding-bottom: 10px;
+  }
+
+  .texte-contenu-footer h3 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .footer-1 h3 {
+    margin-top: 40px;
   }
 }
 
-@media screen and (max-width: 1331px) {
+@media screen and (min-width: 610px) and (max-width: 1331px) {
   .texte-contenu-footer {
     margin-right: 150px;
     padding-bottom: 10px;
